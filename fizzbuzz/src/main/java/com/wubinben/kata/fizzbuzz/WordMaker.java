@@ -5,8 +5,9 @@ package com.wubinben.kata.fizzbuzz;
  * Date: 13-12-18
  * Time: 下午2:20
  */
-public class FizzBuzzMaker {
+public class WordMaker {
     public static String translate(int i) {
+
         if (i % 15 == 0) {
             return "FizzBuzz";
         }

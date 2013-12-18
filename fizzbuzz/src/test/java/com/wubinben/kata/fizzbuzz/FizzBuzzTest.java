@@ -15,21 +15,21 @@ import static junit.framework.TestCase.assertEquals;
 public class FizzBuzzTest {
     @Test
     public void GIVEN_One_SHOULD_One() {
-        assertEquals("Failure - 1 should be 1", "1", FizzBuzzMaker.translate(1));
+        assertEquals("Failure - 1 should be 1", "1", WordMaker.translate(1));
     }
 
     @Test
     public void GIVEN_Three_SHOULD_Fizz() {
-        assertEquals("Failure - 3 should be Fizz", "Fizz", FizzBuzzMaker.translate(3));
+        assertEquals("Failure - 3 should be Fizz", "Fizz", WordMaker.translate(3));
     }
 
     @Test
     public void GIVEN_Five_SHOULD_Buzz() {
-        assertEquals("Failure - 5 should be Buzz", "Buzz", FizzBuzzMaker.translate(5));
+        assertEquals("Failure - 5 should be Buzz", "Buzz", WordMaker.translate(5));
     }
 
     @Test
     public void GIVEN_Fifteen_SHOULD_FizzBuzz() {
-        assertEquals("Failure - 15 should be FizzBuzz", "FizzBuzz", FizzBuzzMaker.translate(15));
+        assertEquals("Failure - 15 should be FizzBuzz", "FizzBuzz", WordMaker.translate(15));
     }
 }
