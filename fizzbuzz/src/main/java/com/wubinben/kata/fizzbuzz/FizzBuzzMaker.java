@@ -18,6 +18,9 @@ public class FizzBuzzMaker {
         if (i == 5) {
             return "Buzz";
         }
-        throw new InvalidStateException("the number to be translated " + i + " is invalid.");
+        if (i == 15) {
+            return "FizzBuzz";
+        }
+        return (new Integer(i)).toString();
     }
 }
