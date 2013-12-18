@@ -27,4 +27,9 @@ public class FizzBuzzTest {
     public void GIVEN_Five_SHOULD_Buzz() {
         assertEquals("Failure - 5 should be Buzz", "Buzz", FizzBuzzMaker.translate(5));
     }
+
+    @Test
+    public void GIVEN_Fifteen_SHOULD_FizzBuzz() {
+        assertEquals("Failure - 15 should be FizzBuzz", "FizzBuzz", FizzBuzzMaker.translate(15));
+    }
 }
