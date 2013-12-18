@@ -32,4 +32,10 @@ public class FizzBuzzTest {
     public void GIVEN_Fifteen_SHOULD_FizzBuzz() {
         assertEquals("Failure - 15 should be FizzBuzz", "FizzBuzz", WordMaker.translate(15));
     }
+
+    @Test
+    public void GIVEN_Thirty_SHOULD_beFizzBuzz() {
+        assertEquals("Failure - 30 should be FizzBuzz", "FizzBuzz", WordMaker.translate(30));
+    }
+
 }
