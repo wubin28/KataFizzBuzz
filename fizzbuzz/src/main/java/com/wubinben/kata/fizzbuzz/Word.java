@@ -8,4 +8,9 @@ package com.wubinben.kata.fizzbuzz;
  * To change this template use File | Settings | File Templates.
  */
 public class Word {
+    private String word;
+
+    public Word(String word) {
+        this.word = word;
+    }
 }
