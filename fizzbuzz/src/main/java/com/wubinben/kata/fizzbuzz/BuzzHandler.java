@@ -11,4 +11,12 @@ public class BuzzHandler extends WordHandler {
     public BuzzHandler(WordHandler wordHandler) {
         super(wordHandler);
     }
+
+    @Override
+    public Word handle(int number) {
+        if (number % 5 == 0) {
+            return new Word("Buzz");
+        }
+        return wordHandler.handle(number);
+    }
 }
