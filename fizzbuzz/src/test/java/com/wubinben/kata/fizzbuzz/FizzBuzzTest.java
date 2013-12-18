@@ -14,7 +14,7 @@ import static junit.framework.TestCase.assertEquals;
 @RunWith(JUnit4.class)
 public class FizzBuzzTest {
     @Test
-    public void testAssertEquals() {
-        assertEquals("Failure - not same", 6L, 6L);
+    public void GIVEN_One_SHOULD_One() {
+        assertEquals("Failure - not same", "1", FizzBuzzMaker.translate(1));
     }
 }
