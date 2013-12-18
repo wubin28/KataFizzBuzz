@@ -8,4 +8,7 @@ package com.wubinben.kata.fizzbuzz;
  * To change this template use File | Settings | File Templates.
  */
 public class FizzBuzzMaker {
+    public static String translate(int i) {
+        return "1";
+    }
 }
