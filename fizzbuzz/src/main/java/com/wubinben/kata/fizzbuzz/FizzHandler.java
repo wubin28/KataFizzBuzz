@@ -11,4 +11,12 @@ public class FizzHandler extends WordHandler {
     public FizzHandler(WordHandler wordHandler) {
         super(wordHandler);
     }
+
+    @Override
+    public Word handle(int number) {
+        if (number % 3 == 0) {
+            return new Word("Fizz");
+        }
+        return wordHandler.handle(number);
+    }
 }
