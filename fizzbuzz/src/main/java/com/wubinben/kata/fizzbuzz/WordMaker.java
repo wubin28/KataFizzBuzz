@@ -8,9 +8,11 @@ package com.wubinben.kata.fizzbuzz;
 public class WordMaker {
     public static String translate(int i) {
         WordHandler commonNumberHandler = new CommonNumberHandler(null);
-        WordHandler buzzHandler = new BuzzHandler(commonNumberHandler);
+        WordHandler whizzHandler = new WhizzHandler(commonNumberHandler);
+        WordHandler buzzHandler = new BuzzHandler(whizzHandler);
         WordHandler fizzHandler = new FizzHandler(buzzHandler);
         WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
+
         Word word = fizzBuzzHandler.handle(i);
         return word.say();
     }
