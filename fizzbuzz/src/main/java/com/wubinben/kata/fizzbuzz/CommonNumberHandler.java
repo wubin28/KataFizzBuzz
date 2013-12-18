@@ -13,7 +13,7 @@ public class CommonNumberHandler extends WordHandler {
     }
 
     @Override
-    public Word handle(int number, Word word) {
+    public Word handle(int number) {
         return new Word((new Integer(number)).toString());
     }
 }

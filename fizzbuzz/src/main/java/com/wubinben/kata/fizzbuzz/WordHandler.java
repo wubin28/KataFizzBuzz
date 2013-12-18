@@ -14,5 +14,5 @@ public abstract class WordHandler {
         this.wordHandler = wordHandler;
     }
 
-    public abstract Word handle(int number, Word word);
+    public abstract Word handle(int number);
 }
