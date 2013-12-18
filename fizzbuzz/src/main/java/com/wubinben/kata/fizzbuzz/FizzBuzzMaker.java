@@ -1,7 +1,5 @@
 package com.wubinben.kata.fizzbuzz;
 
-import sun.plugin.dom.exception.InvalidStateException;
-
 /**
  * User: Ben
  * Date: 13-12-18
@@ -9,17 +7,14 @@ import sun.plugin.dom.exception.InvalidStateException;
  */
 public class FizzBuzzMaker {
     public static String translate(int i) {
-        if (i == 1) {
-            return "1";
+        if (i % 15 == 0) {
+            return "FizzBuzz";
         }
-        if (i == 3) {
+        if (i % 3 == 0) {
             return "Fizz";
         }
-        if (i == 5) {
+        if (i % 5 == 0) {
             return "Buzz";
-        }
-        if (i == 15) {
-            return "FizzBuzz";
         }
         return (new Integer(i)).toString();
     }
