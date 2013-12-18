@@ -11,4 +11,9 @@ public class CommonNumberHandler extends WordHandler {
     public CommonNumberHandler(WordHandler wordHandler) {
         super(wordHandler);
     }
+
+    @Override
+    public Word handle(int number, Word word) {
+        return Word((new Integer(number)).toString());
+    }
 }
