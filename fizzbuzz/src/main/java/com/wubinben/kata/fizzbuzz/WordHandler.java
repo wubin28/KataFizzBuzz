@@ -7,10 +7,12 @@ package com.wubinben.kata.fizzbuzz;
  * Time: 下午7:03
  * To change this template use File | Settings | File Templates.
  */
-public class WordHandler {
+public abstract class WordHandler {
     private WordHandler wordHandler;
 
     public WordHandler(WordHandler wordHandler) {
         this.wordHandler = wordHandler;
     }
+
+    public abstract Word handle(int number, Word word);
 }

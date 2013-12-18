@@ -12,7 +12,7 @@ public class WordMaker {
         WordHandler fizzHandler = new FizzHandler(buzzHandler);
         WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
         Word blankWord = new Word();
-        Word handledWord = fizzBuzzHandler.handle(i, word);
+        Word handledWord = fizzBuzzHandler.handle(i, blankWord);
 
         if (i % 15 == 0) {
             return "FizzBuzz";
