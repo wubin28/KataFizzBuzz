@@ -11,8 +11,7 @@ public class WordMaker {
         WordHandler buzzHandler = new BuzzHandler(commonNumberHandler);
         WordHandler fizzHandler = new FizzHandler(buzzHandler);
         WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
-        Word blankWord = new Word();
-        Word handledWord = fizzBuzzHandler.handle(i, blankWord);
+        Word handledWord = fizzBuzzHandler.handle(i);
 
         if (i % 15 == 0) {
             return "FizzBuzz";
