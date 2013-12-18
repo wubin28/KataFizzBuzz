@@ -8,7 +8,7 @@ package com.wubinben.kata.fizzbuzz;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class WordHandler {
-    private WordHandler wordHandler;
+    protected WordHandler wordHandler;
 
     public WordHandler(WordHandler wordHandler) {
         this.wordHandler = wordHandler;
