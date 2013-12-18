@@ -1,11 +1,9 @@
 package com.wubinben.kata.fizzbuzz;
 
 /**
- * Created with IntelliJ IDEA.
  * User: Ben
  * Date: 13-12-18
  * Time: 下午7:08
- * To change this template use File | Settings | File Templates.
  */
 public class FizzHandler extends WordHandler {
     public FizzHandler(WordHandler wordHandler) {
@@ -14,7 +12,7 @@ public class FizzHandler extends WordHandler {
 
     @Override
     public Word handle(int number) {
-        if (number % 3 == 0) {
+        if (number % 3 == 0 || (new Integer(number)).toString().contains("3")) {
             return new Word("Fizz");
         }
         return wordHandler.handle(number);
