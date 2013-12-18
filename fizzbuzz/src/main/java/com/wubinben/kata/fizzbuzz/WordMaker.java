@@ -7,6 +7,12 @@ package com.wubinben.kata.fizzbuzz;
  */
 public class WordMaker {
     public static String translate(int i) {
+        WordHandler commonNumberHandler = new CommonNumberHandler(null);
+        WordHandler buzzHandler = new BuzzHandler(commonNumberHandler);
+        WordHandler fizzHandler = new FizzHandler(buzzHandler);
+        WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
+        Word blankWord = new Word();
+        Word handledWord = fizzBuzzHandler.handle(i, word);
 
         if (i % 15 == 0) {
             return "FizzBuzz";
