@@ -12,8 +12,9 @@ public class WordMaker {
         WordHandler buzzHandler = new BuzzHandler(whizzHandler);
         WordHandler fizzHandler = new FizzHandler(buzzHandler);
         WordHandler fizzBuzzHandler = new FizzBuzzHandler(fizzHandler);
+        WordHandler fizzBuzzWhizzHandler = new FizzBuzzWhizzHandler(fizzBuzzHandler);
 
-        Word word = fizzBuzzHandler.handle(i);
+        Word word = fizzBuzzWhizzHandler.handle(i);
         return word.say();
     }
 }
