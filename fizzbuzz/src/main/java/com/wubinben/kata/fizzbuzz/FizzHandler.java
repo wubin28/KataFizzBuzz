@@ -12,7 +12,7 @@ public class FizzHandler extends WordHandler {
 
     @Override
     public Word handle(int number) {
-        if (number % 3 == 0 || (new Integer(number)).toString().contains("3")) {
+        if (number % 3 == 0 || Integer.valueOf(number).toString().contains("3")) {
             return new Word("Fizz");
         }
         return wordHandler.handle(number);
