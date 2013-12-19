@@ -15,6 +15,6 @@ public class FizzBuzzHandler extends WordHandler {
         if (number % 15 == 0 || (number % 5 == 0 && Integer.valueOf(number).toString().contains("3"))) {
             return new Word("FizzBuzz");
         }
-        return wordHandler.handle(number);
+        return getWordHandler().handle(number);
     }
 }

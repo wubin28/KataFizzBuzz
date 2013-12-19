@@ -15,6 +15,6 @@ public class BuzzHandler extends WordHandler {
         if (number % 5 == 0) {
             return new Word("Buzz");
         }
-        return wordHandler.handle(number);
+        return getWordHandler().handle(number);
     }
 }

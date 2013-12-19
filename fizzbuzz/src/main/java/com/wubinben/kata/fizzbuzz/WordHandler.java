@@ -13,4 +13,8 @@ public abstract class WordHandler {
     }
 
     public abstract Word handle(int number);
+
+    protected WordHandler getWordHandler() {
+        return wordHandler;
+    }
 }
