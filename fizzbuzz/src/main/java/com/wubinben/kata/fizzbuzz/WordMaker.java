@@ -6,6 +6,9 @@ package com.wubinben.kata.fizzbuzz;
  * Time: 下午2:20
  */
 public class WordMaker {
+    private WordMaker() {
+
+    }
     public static String translate(int i) {
         WordHandler commonNumberHandler = new CommonNumberHandler(null);
         WordHandler whizzHandler = new WhizzHandler(commonNumberHandler);
