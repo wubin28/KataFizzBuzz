@@ -10,7 +10,7 @@ public class WordMaker {
 
     }
     public static String translate(int i) {
-        WordHandler commonNumberHandler = new CommonNumberHandler(null);
+        WordHandler commonNumberHandler = new CommonNumberHandler();
         WordHandler whizzHandler = new WhizzHandler(commonNumberHandler);
         WordHandler buzzHandler = new BuzzHandler(whizzHandler);
         WordHandler fizzHandler = new FizzHandler(buzzHandler);

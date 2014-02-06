@@ -6,8 +6,8 @@ package com.wubinben.kata.fizzbuzz;
  * Time: 下午7:04
  */
 public class CommonNumberHandler extends WordHandler {
-    public CommonNumberHandler(WordHandler wordHandler) {
-        super(wordHandler);
+    public CommonNumberHandler() {
+        super(null);
     }
 
     @Override
